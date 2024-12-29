@@ -1,0 +1,38 @@
+.Navbar {
+    padding:1rem;
+  }
+  .list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    margin: 0;
+    padding: 0;
+  }
+  .link {
+    color:var(--navbar-text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+    font-size:22px;
+    font-weight:bold; 
+  }
+  .link:hover {
+    background-color: var(--navbar-text-color);
+    color: var(--hover-color);
+  }
+  @media(width<=360px){
+    .Navbar{
+      max-width:100%;
+      margin-left: 10px;
+     }
+    .list {
+      gap:5px;
+      margin: 0;
+      padding: 0;
+    }
+    .link {
+      font-size:10px;
+      font-weight:bold; 
+    }
+  }
