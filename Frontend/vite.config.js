@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    rollupOptions: {
-      external: ['react-router-dom']
-    }
-  }
+    outDir: 'dist', // Specify the output directory for the build
+  },
+  base: './', // If deploying to the root directory, leave this as './'
+  // If deploying to a subdirectory, change this to: base: '/your-repository-name/'
 });
+

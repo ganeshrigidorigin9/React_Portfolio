@@ -7,7 +7,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  // handle form submission
+   // handle form submission
   async function handleSubmit(event) {
     event.preventDefault();
 
@@ -38,7 +38,7 @@ function Contact() {
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form onSubmit={handleSubmit}>
+       <form onSubmit={handleSubmit}>  
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
